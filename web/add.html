@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/add.css">
+    <title>添加库存</title>
+</head>
+<body>
+<div id="div_container">
+    <div id="div_fruit_list">
+        <p class="center f30">新增库存信息</p>
+        <form action="fruit.do" method="get">
+            <input type="hidden" name="operate" value="add"/>
+            <table id="tbl_fruit">
+                <tr>
+                    <th class="w20">名称：</th>
+                    <td><label>
+                        <input type="text" name="name"/>
+                    </label></td>
+                </tr>
+                <tr>
+                    <th class="w20">单价：</th>
+                    <td><label>
+                        <input type="text" name="price"/>
+                    </label></td>
+                </tr>
+                <tr>
+                    <th class="w20">库存：</th>
+                    <td><label>
+                        <input type="text" name="inventory"/>
+                    </label></td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input type="submit" value="添加"/>
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
